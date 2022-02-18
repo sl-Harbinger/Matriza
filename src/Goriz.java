@@ -8,8 +8,8 @@ public class Goriz {
         System.out.println("элименты под главной диагональю ");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                if (j <= i) {
-                    System.out.print(multiply[i][j] + " "); //элименты под диагональю
+                if ((j <= i) & ((multiply[i][j] % 2) != 0)) {
+                    System.out.print(multiply[i][j] + " "); //элименты не чётные под диагональю
                 }
             }
             if ((multiply[i][i] % 2) == 0) {    //элименты четные главной диагонали

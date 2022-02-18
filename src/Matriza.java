@@ -18,6 +18,5 @@ public class Matriza {
         Proverka otvet = new Proverka();
         otvet.getMatr(n, m);
 
-
     }
 }

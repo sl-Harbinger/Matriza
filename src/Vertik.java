@@ -7,7 +7,7 @@ public class Vertik {
         System.out.println("элименты под главной диагональю ");
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < m; j++) {
-                if (j <= i) {
+                if ((j <= i) & ((multiply[i][j] % 2) != 0)) {
                     System.out.print(multiply[i][j] + " "); //элименты под диагональю
                 }
             }
